@@ -37,14 +37,15 @@ class _NewExpenseScreenState extends State<NewExpenseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(
-        title: "Nova Despesa",
+        title: 'Nova despesa',
+        iconData: Icons.payments,
       ),
       body: SafeArea(
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
             SliverPadding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 20),
               sliver: SliverToBoxAdapter(
                 child: Form(
                   key: _formKey,
